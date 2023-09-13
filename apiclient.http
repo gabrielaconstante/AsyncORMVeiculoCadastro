@@ -1,0 +1,33 @@
+GET http://localhost:7000/veiculo HTTP/1.1
+Content-Type: application/json
+###
+
+
+GET http://localhost:7000/modelo HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:7000/veiculo HTTP/1.1
+Content-Type: application/json
+
+{
+  "placa":"85PJG1U",
+  "modelo":"Caminhonete",
+  "preco": 70000.00
+}
+###
+
+
+PUT http://localhost:7000/veiculo/898we HTTP/1.1
+Content-Type: application/json
+
+{
+  "modelo": "Onibus 2 andares",
+  "preco": 3000.000
+}
+###
+DELETE http://localhost:7000/veiculo/12SSD3F HTTP/1.1
+Content-Type: application/json 
+
+###
